@@ -24,6 +24,7 @@ typedef FamilyCreate<T, R extends Ref, Arg> = T Function(
 );
 
 /// A function that reads the state of a provider.
+@Deprecated('Use Ref instead')
 typedef Reader = T Function<T>(ProviderBase<T> provider);
 
 /// A base class for _all_ providers.
